@@ -36,6 +36,11 @@
     border: none;
 }
 
+main{
+    max-width: 1440px;
+    margin: 0px auto;
+}
+
 /* heard style  */
 
 
@@ -85,4 +90,16 @@
 
 .banner-imags{
     width: 100%;
+}
+
+/* responsive media  qury */
+@media screen and (max-width:576px) {
+    .nav-item, .navbar{
+        flex-direction: column;
+    }
+}
+
+/* team and feature relateb styles */
+.teams{
+    align-items: center;
 }
