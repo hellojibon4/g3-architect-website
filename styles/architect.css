@@ -26,6 +26,10 @@
     background-color: rgba(255, 144, 14, 0.1);
 }
 
+.text-primary{
+    color: rgba(255, 144, 14, 1) ;
+}
+
 .btn-primary{
     background-color: rgba(255, 144, 14, 1);
     color: #ffff;
@@ -41,6 +45,14 @@ main{
     margin: 0px auto;
 }
 
+main > section{
+    margin-top: 130px;
+}
+
+.section-titel{
+    font-size: 2.8rem;
+    font-size: 700;
+}
 /* heard style  */
 
 
@@ -92,14 +104,56 @@ main{
     width: 100%;
 }
 
-/* responsive media  qury */
-@media screen and (max-width:576px) {
-    .nav-item, .navbar{
-        flex-direction: column;
-    }
-}
+
 
 /* team and feature relateb styles */
 .teams{
     align-items: center;
 }
+
+.team-img-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+}
+
+.our-features{
+    margin-left: 130px;
+    max-width: 530px;
+}
+
+
+
+#Quick-list{
+    font-size: 500;
+}
+
+
+
+/* responsive media  qury */
+@media screen and (max-width:576px) {
+    .nav-item, 
+    .navbar,
+    .teams{
+        flex-direction: column;
+    }
+    
+    .team-img-container{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .our-features{
+        margin-left: 20px;
+    }
+}
+
+
+/* medium size device */
+@media screen and (min-width:576px) and (max-width:992px) {
+    .teams{
+        flex-direction: column;
+    }
+    .our-features{
+        margin-left: 50px;
+    }
+}
+   
